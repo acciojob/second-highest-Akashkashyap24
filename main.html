@@ -11,6 +11,16 @@
 		function secondHighest(arr) {
 			//Write your code here
 			
+			if (arr.length!=0){
+				let sarr=arr.sort((a,b)=> a-b);
+			let ans=sarr[sarr.length-2];
+			return ans;
+			}
+			else{
+				let ans="-Infinity";
+				return ans;
+			}
+
 		}
 
 		function Main() {
